@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><b>SENTENCE ANALYZER</b></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color:powderblue;">       
+    <div class="container">
+        <h1>Senalyze</h1>
+        <form method="POST">
+            <textarea name="sentence" placeholder="Enter a sentence..." required></textarea><br>
+            <button type="submit">Analyze Your Sentence</button>
+        </form>
+
+        {% if results %}
+            <h2>Analysis Result:</h2>
+            <table>
+                <tr>
+                    <th>Word</th>
+                    <th>Meaning</th>
+                    <th>Part of Speech</th>
+                    <th>Length</th>
+                </tr>
+                {% for item in results %}
+                <tr>
+                    <td>{{ item.word }}</td>
+                    <td>{{ item.meaning }}</td>
+                    <td>{{ item.part_of_speech }}</td>
+                    <td>{{ item.length }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>
