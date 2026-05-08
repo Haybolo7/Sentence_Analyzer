@@ -22,6 +22,9 @@ A robust Natural Language Processing (NLP) web application that provides real-ti
 ## 🔮 Useful Applications
 
 (i) **Educational Support**: An interactive tool for language learners to visualize sentence structure and expand their vocabulary with instant definitions.
+
 (ii) **Accessibility Aid**: Helps users with visual impairments or reading difficulties by providing audio playback of entered text.
+
 (iii) **Content Writing & Editing**: Assists writers in ensuring their content is appropriately leveled for their audience by monitoring the readability score.
+
 (iv) **Linguistic Analysis**: Provides a quick-access tool for students and researchers to perform basic syntactic analysis on specific phrases or sentences.
